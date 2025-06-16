@@ -8,6 +8,23 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  display: flex;
 }
 
 .footer {
@@ -20,10 +37,42 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: white;  
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.cards {
+  display: flex;
+  padding: 48px;
+  align-items: space-between;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 250px;
+  aspect-ratio: 1 / 1;
+  padding: 16px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
